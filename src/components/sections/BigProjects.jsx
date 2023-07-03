@@ -1,30 +1,31 @@
-import React, { useEffect, useState } from 'react'
-import { useProjects } from '../../hooks/useProjects'
-import { BigProjectCard } from '../ui/cards/BigProjectCard'
+import React, { useEffect, useState } from 'react';
+import { useProjects } from '../../hooks/useProjects';
+import { BigProjectCard } from '../ui/cards/BigProjectCard';
 
 const BigProjects = () => {
-	const { bigProjects } = useProjects('big')
+	const { bigProjects } = useProjects('big');
 
-	const [projects, setProjects] = useState([])
-	const [expand, setExpand] = useState(false)
+	const [projects, setProjects] = useState([]);
+	const [expand, setExpand] = useState(false);
 	useEffect(() => {
 		if (expand) {
-			setProjects(bigProjects)
+			setProjects(bigProjects);
 		} else {
-			setProjects(bigProjects.slice(0, 6))
+			setProjects(bigProjects.slice(0, 6));
 		}
 	}, [expand, bigProjects]);
 
 	return (
 		<div
 			style={{
-				background: "  url('../public/portfolio-bg.svg')",
+				background: "  url('/portfolio-bg.svg')",
 				backgroundRepeat: 'no-repeat',
 			}}
-
 		>
 			<div className=" container flex  justify-center items-center flex-col max-w-[90rem] mx-auto p-6">
-				<h1 className="text-6xl text-center mt-72 mb-32 sm:mb-20">Portfolio.</h1>
+				<h1 className="text-6xl text-center mt-72 mb-32 sm:mb-20">
+					Portfolio.
+				</h1>
 				<div className="  grid md:grid-cols-2  grid-cols-1  gap-y-10 gap-x-5  xl:grid-cols-3 ">
 					{projects.map((data) => {
 						return <BigProjectCard key={data._id} project={data} />;
@@ -54,6 +55,6 @@ const BigProjects = () => {
 			</div>
 		</div>
 	);
-}
+};
 
 export default BigProjects;

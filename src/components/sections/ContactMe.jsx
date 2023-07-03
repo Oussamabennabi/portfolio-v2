@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react'
-import GoogleMap from '../GoogleMap'
+import React, { useEffect, useRef, useState } from 'react';
+import GoogleMap from '../GoogleMap';
 import emailjs from '@emailjs/browser';
-import useWindowSize from '../../hooks/useWindowSize'
+import useWindowSize from '../../hooks/useWindowSize';
 
 const ContactMe = () => {
 	const [error, setError] = useState(false);
@@ -13,7 +13,6 @@ const ContactMe = () => {
 	const messageRef = useRef();
 
 	const [loading, setLoading] = useState(false);
-
 
 	async function handleSubmit(e) {
 		e.preventDefault();
@@ -28,7 +27,6 @@ const ContactMe = () => {
 			)
 			.then(
 				(result) => {
-
 					setSuccess(true);
 					setTimeout(() => {
 						setSuccess(false);
@@ -41,12 +39,12 @@ const ContactMe = () => {
 			);
 		setLoading(false);
 	}
-  return (
+	return (
 		<section id="contactme">
 			<div className="container max-w-[90rem] mx-auto p-6 mt-20 flex items-center justify-end flex-col">
 				<div
 					style={{
-						backgroundImage: "url('../public/contactme.png')",
+						backgroundImage: "url('/contactme.png')",
 						backgroundRepeat: 'no-repeat',
 						backgroundSize: 'contain',
 						backgroundPosition: 'top center',
@@ -64,7 +62,7 @@ const ContactMe = () => {
 				<div
 					// style={{
 					// // 	background:
-					// // 		" linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/pink-blob.png')",
+					// // 		" linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/pink-blob.png')",
 					// // 	backgroundRepeat: 'no-repeat',
 
 					// // 	backgroundSize: 'contain',
@@ -141,6 +139,6 @@ const ContactMe = () => {
 			</div>
 		</section>
 	);
-}
+};
 
-export default ContactMe
+export default ContactMe;

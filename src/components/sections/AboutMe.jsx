@@ -6,7 +6,7 @@ const AboutMe = () => {
 		<div
 			className="relative"
 			style={{
-				backgroundImage: "url('../public/aboutme-pattern.svg')",
+				backgroundImage: "url('/aboutme-pattern.svg')",
 				backgroundRepeat: 'no-repeat',
 				backgroundSize: 'contain',
 			}}
@@ -14,7 +14,7 @@ const AboutMe = () => {
 			<div
 				className="absolute w-full h-full -z-40"
 				style={{
-					backgroundImage: "url('../public/aboutme-pattern.svg')",
+					backgroundImage: "url('/aboutme-pattern.svg')",
 					backgroundRepeat: 'no-repeat',
 					backgroundSize: 'contain',
 					rotate: '180deg',
@@ -25,7 +25,7 @@ const AboutMe = () => {
 					<div
 						className="flex bg-top sm:bg-left-top"
 						style={{
-							backgroundImage: "url('../public/yellow-liquid.png')",
+							backgroundImage: "url('/yellow-liquid.png')",
 							backgroundRepeat: 'no-repeat',
 						}}
 					>
@@ -53,7 +53,7 @@ const AboutMe = () => {
 					</div>
 					<div
 						style={{
-							backgroundImage: "url('../public/pink-blob.png')",
+							backgroundImage: "url('/pink-blob.png')",
 
 							backgroundRepeat: 'no-repeat',
 							backgroundSize: 'conatain',
