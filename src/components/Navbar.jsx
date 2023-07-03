@@ -23,7 +23,7 @@ const Navbar = () => {
 		const handleScroll = () => {
 			const top = window.scrollY;
 			sections.forEach((section) => {
-				const offset = section.offsetTop - 100;
+				const offset = section.offsetTop -  	100;
 				const height = section.offsetHeight;
 				const id = section.getAttribute('id');
 
@@ -64,7 +64,7 @@ const Navbar = () => {
 				<ul className={`nav-content ${!hidden && 'open'}`}>
 					<a
 						href="#aboutme"
-						className="nav-link  cursor-pointer transition-all duration-150 "
+						className="nav-link  active cursor-pointer transition-all duration-150 "
 					>
 						About Me.
 					</a>

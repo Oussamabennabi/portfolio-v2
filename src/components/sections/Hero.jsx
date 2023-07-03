@@ -10,7 +10,6 @@ const Hero = () => {
 				backgroundRepeat: 'no-repeat no-repeat ',
 			}}
 		>
-			
 			<div
 				style={{
 					backgroundImage: "url('/small-hero-pattern.svg')",
@@ -18,32 +17,34 @@ const Hero = () => {
 					backgroundPosition: '100px 100px',
 					backgroundSize: '300px',
 				}}
-				className="content"
+				className="container max-w-[90rem] mx-auto p-6  flex items-center"
 			>
 				<div
-					className="flex flex-col relative w-full sm:w-1/2 mb-10"
+					className="flex flex-col relative w-full mb-10"
 					style={{}}
 				>
 					<h1 className=" text-center sm:text-left">
 						<CoolText
 							text={'I AM A PROFESSIONAL'}
 							color={'text-white'}
-							className="mb-6 "
+							className=" "
 						/>
 						<CoolText text={'WEB DEVELOPER'} color={'text-primary-pink'} />
-						<span className="block tracking-widest	 font-bold "></span>
 					</h1>
 
-					<p className="text-gray-color mt-8 text-center sm:text-left text-xl  max-w-full sm:max-w-[480px]">
-						I’m a software engineer specializing in Front-end Development who
-						writes clean,elegant and efficient code.
+					<p className="text-gray-color mt-1 text-center sm:text-left text-xl  max-w-full sm:max-w-[620px]">
+						am a Front-end Development specialist with a passion for crafting
+						clean, elegant, and highly efficient code. As a software engineer, I
+						channel my expertise towards creating seamless user experiences and
+						implementing cutting-edge technologies.
 					</p>
-					<button
-						className="mt-8 primary-btn  	border-primary-yellow
+					<a
+						className="mt-5 primary-btn  	border-primary-yellow
 	bg-primary-yellow w-32 place-self-center text-center sm:self-start"
+						href="#contactme"
 					>
 						Contact Me
-					</button>
+					</a>
 				</div>
 			</div>
 		</div>
