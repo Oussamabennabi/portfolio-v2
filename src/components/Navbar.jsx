@@ -54,11 +54,12 @@ const Navbar = () => {
 			} flex select-none justify-between z-[1000] backdrop-blur-[12px]  fixed inset-0 h-16`}
 		>
 			{/*  LOGO  */}
-			<div className="relative group z-[10000] cursor-pointer">
-				<span className=" pointer-events-none cursor-pointer left-6 logo-text absolute z-40 inset-0  text-[50px]">
+			<a href="/" className="relative group z-[10000] cursor-pointer">
+				<img src="/logo.png" className="w-24 ml-3 -mt-1" alt="" />
+				<span className=" pointer-events-none cursor-pointer left-1/2 ml-1.5 top-1/2 -translate-y-1/2 -mt-1 -translate-x-1/2 logo-text absolute z-40 inset-0  text-[40px]">
 					OB
 				</span>
-			</div>
+			</a>
 			{/* LINKES */}
 			<div className={`nav-container `}>
 				<ul className={`nav-content ${!hidden && 'open'}`}>
