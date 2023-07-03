@@ -63,24 +63,28 @@ const Navbar = () => {
 			<div className={`nav-container `}>
 				<ul className={`nav-content ${!hidden && 'open'}`}>
 					<a
+					onClick={()=>setHidden(true)}
 						href="#aboutme"
 						className="nav-link  active cursor-pointer transition-all duration-150 "
 					>
 						About Me.
 					</a>
 					<a
+					onClick={()=>setHidden(true)}
 						href="#portfolio"
 						className="nav-link  cursor-pointer transition-all duration-150"
 					>
 						Portfolio.
 					</a>
 					<a
+					onClick={()=>setHidden(true)}
 						href="#contactme"
 						className="nav-link  cursor-pointer transition-all duration-150"
 					>
 						Contact Me.
 					</a>{' '}
 					<a
+					onClick={()=>setHidden(true)}
 						download
 						href="/resume/Oussama_Bennabi_Resume.pdf"
 						className="nav-link  cursor-pointer transition-all duration-150"
