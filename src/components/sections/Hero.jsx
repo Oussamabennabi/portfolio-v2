@@ -33,7 +33,7 @@ const Hero = () => {
 					</h1>
 
 					<p className="text-gray-color mt-1 text-center sm:text-left text-xl  max-w-full sm:max-w-[620px]">
-						am a Front-end Development specialist with a passion for crafting
+					I'am a Front-end Development specialist with a passion for crafting
 						clean, elegant, and highly efficient code. As a software engineer, I
 						channel my expertise towards creating seamless user experiences and
 						implementing cutting-edge technologies.
