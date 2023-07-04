@@ -10,7 +10,6 @@ html {
 }
 body {
 	background-color: #1c1c1c;
-	background-color: rgb(10, 10, 10);
 	color: white;
 	font-family: 'Belanosima', sans-serif;
 }
@@ -191,17 +190,17 @@ nav {
 	display: flex !important;
 }
 .image-gallery-left-nav .image-gallery-svg, .image-gallery-right-nav .image-gallery-svg {
-  width: 30px !important;
-
+  width: 20px !important;
 }
-
+.image-gallery-fullscreen-button .image-gallery-svg, .image-gallery-play-button .image-gallery-svg {
+    height: 18px;
+    width: 18px;
+}
 .image-gallery:has(.fullscreen){
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .image-gallery-content.fullscreen  .image-gallery-image{
 	height: 100% !important;
-
 }
