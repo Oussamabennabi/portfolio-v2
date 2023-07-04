@@ -7,8 +7,6 @@ import 'react-image-gallery/styles/css/image-gallery.css';
 
 export const BigProjectCard = ({ project }) => {
 	const [openDropdown, setOpenDropdown] = useState(false);
-const [modalIsOpen, setModalIsOpen] = useState(false);
-const [modalImageIndex, setModalImageIndex] = useState(0);
 
 	const dropdownRef = useClickOutside(() => {
 		setOpenDropdown(false);
@@ -17,10 +15,7 @@ const [modalImageIndex, setModalImageIndex] = useState(0);
 		return project.images?.map((image) => ({ original:urlFor(image) }))
 	});
 
-const openModal = (index) => {
-	setModalImageIndex(index);
-	setModalIsOpen(true);
-};
+
 
 
 	return (
@@ -82,9 +77,7 @@ const openModal = (index) => {
 					showPlayButton={false}
 					disableKeyDown={false}
 					items={images}
-					onClick={(event) => {
-						openModal(event.index);
-					}}
+
 				/>
 			)}
 

@@ -2,9 +2,18 @@ import React, { useState } from 'react';
 import urlFor from '../../../utils/urlFor';
 import useClickOutside from '../../../hooks/useClickOutside'
 			// href={project.hostedLink ?? project.githubLink}
-//
+import ImageGallery from 'react-image-gallery';
+
+import 'react-image-gallery/styles/css/image-gallery.css';
+
 export const SmallProjectCard = ({ project }) => {
 	const [openDropdown, setOpenDropdown] = useState(false)
+
+
+const [images, setImages] = useState(() => {
+	return project.images?.map((image) => ({ original: urlFor(image) }));
+});
+
 
   const dropdownRef = useClickOutside(() => {
 		setOpenDropdown(false);
@@ -62,9 +71,15 @@ export const SmallProjectCard = ({ project }) => {
 			</div>
 			{/*  */}
 
-
-			
-
+			{images && (
+				<ImageGallery
+					showBullets={false}
+					showPlayButton={false}
+					disableKeyDown={false}
+					items={images}
+					
+				/>
+			)}
 
 			<div class="p-5 flex-1 flex flex-col gap-6">
 				<div>
