@@ -12,6 +12,7 @@ body {
 	background-color: #1c1c1c;
 	color: white;
 	font-family: 'Belanosima', sans-serif;
+
 }
 
 
@@ -180,11 +181,15 @@ nav {
 }
 .image-gallery {
 	background-color: black !important;
-	height: 250px;
+	height: 200px;
 }
 .image-gallery-image {
-	object-fit: contain !important;
-	height: 250px;
+	height: 200px;
+	transition: all .2s ease-in-out;
+
+}
+.image-gallery-image:hover {
+	scale: 1.06;
 }
 .image-gallery-slides {
 	display: flex !important;
