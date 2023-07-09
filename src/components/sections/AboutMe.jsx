@@ -14,7 +14,7 @@ const AboutMe = () => {
 			<div
 				className="absolute w-full h-full -z-40"
 				style={{
-					backgroundImage: "url('/aboutme-pattern.svg')",
+					// backgroundImage: "url('/aboutme-pattern.svg')",
 					backgroundRepeat: 'no-repeat',
 					backgroundSize: 'contain',
 					rotate: '180deg',
@@ -29,9 +29,9 @@ const AboutMe = () => {
 							backgroundRepeat: 'no-repeat',
 						}}
 					>
-						<div className="max-w-[600px] mt-20  text-center sm:text-left">
+						<div className=" mt-20  text-center sm:text-left">
 							<h2 className="text-6xl ">About Me</h2>
-							<p className="text-lg ">
+							<p className="text-xl mt-24">
 								<br />
 								Greetings! I'm Oussama, a passionate individual dedicated to
 								crafting captivating digital experiences. I thrive on
@@ -51,24 +51,7 @@ const AboutMe = () => {
 							</p>
 						</div>
 					</div>
-					<div
-						style={{
-							backgroundImage: "url('/pink-blob.png')",
-
-							backgroundRepeat: 'no-repeat',
-							backgroundSize: 'conatain',
-							backgroundPosition: 'top center',
-						}}
-						className="flex justify-between items-center"
-					>
-						<div></div>
-						<div className="max-w-[800px]  mt-20 mb-20">
-							<h2 className="text-6xl text-center sm:text-left">My Skills</h2>
-							<br />
-							<br />
-							<SkillsGrid />
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</div>

@@ -43,12 +43,7 @@ const ContactMe = () => {
 		<section id="contactme">
 			<div className="container max-w-[90rem] mx-auto p-6 mt-20 flex items-center justify-end flex-col">
 				<div
-					style={{
-						backgroundImage: "url('/contactme.png')",
-						backgroundRepeat: 'no-repeat',
-						backgroundSize: 'contain',
-						backgroundPosition: 'top center',
-					}}
+
 					className="text-center my-10"
 				>
 					<h1 className="text-6xl  pb-4">CONTACT ME</h1>
@@ -60,14 +55,7 @@ const ContactMe = () => {
 					</p>
 				</div>
 				<div
-					// style={{
-					// // 	background:
-					// // 		" linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/pink-blob.png')",
-					// // 	backgroundRepeat: 'no-repeat',
-
-					// // 	backgroundSize: 'contain',
-					// // 	backgroundPosition: 'top left',
-					// // }}
+				
 					className="flex justify-between gap-10 2md:flex-col 2md:items-center  mb-20 w-full"
 				>
 					<form

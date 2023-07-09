@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useProjects } from '../../hooks/useProjects';
-import { BigProjectCard } from '../ui/cards/BigProjectCard';
+import { ProjectCard } from '../ui/cards/ProjectCard'
 
 const BigProjects = () => {
 	const { bigProjects } = useProjects('big');
@@ -28,7 +28,7 @@ const BigProjects = () => {
 				</h1>
 				<div className="  grid md:grid-cols-2  grid-cols-1  gap-y-10 gap-x-5  xl:grid-cols-3 ">
 					{projects.map((data) => {
-						return <BigProjectCard key={data._id} project={data} />;
+						return <ProjectCard key={data._id} project={data} />;
 					})}
 				</div>
 				<button
