@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import useWindowSize from '../hooks/useWindowSize';
+import { useResume } from '../hooks/useResume'
 
 const Navbar = () => {
 	const [hidden, setHidden] = useState(true);
 	const { width, height } = useWindowSize();
+	const { resumeUrl} = useResume()
 	useEffect(() => {
 		if (!hidden) {
 			document.body.style.overflowY = 'hidden';
@@ -63,31 +65,31 @@ const Navbar = () => {
 			<div className={`nav-container `}>
 				<ul className={`nav-content ${!hidden && 'open'}`}>
 					<a
-					onClick={()=>setHidden(true)}
+						onClick={() => setHidden(true)}
 						href="#aboutme"
 						className="nav-link  active cursor-pointer transition-all duration-150 "
 					>
 						About Me.
 					</a>
 					<a
-					onClick={()=>setHidden(true)}
+						onClick={() => setHidden(true)}
 						href="#portfolio"
 						className="nav-link  cursor-pointer transition-all duration-150"
 					>
 						Portfolio.
 					</a>
 					<a
-					onClick={()=>setHidden(true)}
+						onClick={() => setHidden(true)}
 						href="#contactme"
 						className="nav-link  cursor-pointer transition-all duration-150"
 					>
 						Contact Me.
 					</a>{' '}
 					<a
-					onClick={()=>setHidden(true)}
-						download
-						href="/resume/Oussama_Bennabi_Resume.pdf"
-						className="nav-link  cursor-pointer transition-all duration-150"
+						onClick={() => setHidden(true)}
+						
+						href={resumeUrl + '?dl='}
+								className="nav-link  cursor-pointer transition-all duration-150"
 					>
 						Resume.
 					</a>{' '}
