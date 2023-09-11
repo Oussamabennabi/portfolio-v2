@@ -88,7 +88,7 @@ const Navbar = () => {
 					<a
 						onClick={() => setHidden(true)}
 						
-						href={resumeUrl + '?dl='}
+						href={"/Oussama_Bennabi_Resume_11-09-2023-04-06-20.pdf"}
 								className="nav-link  cursor-pointer transition-all duration-150"
 					>
 						Resume.
